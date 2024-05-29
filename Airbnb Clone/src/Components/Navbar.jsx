@@ -12,7 +12,7 @@ const Navbar = () => {
         <img src="" alt="skybnb" className="mt-4 ml-3"></img>
         <div className="navup mb-4">
             <ul className = "flex space-x-10 justify-center">
-              <NavLink to="/Stays">Stays</NavLink>
+              <Link to="/Stays">Stays</Link>
               <Link to="/Experien">Experiences</Link>
               <Link to="/OnlineExp">Online Experiences</Link>
               <Link to="/YourHome">SkyBNB your Home</Link>
