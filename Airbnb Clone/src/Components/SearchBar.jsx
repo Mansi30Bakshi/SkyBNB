@@ -16,32 +16,32 @@
 // export default SearchBar
 
 import React from 'react';
+import { BsSearch } from "react-icons/bs";
 
 const SearchBar = () => {
   return (
     <>
-      <div className='border-2 border-black-300 rounded-xl p-3 mb-4 bg-white'>
-      <div className='flex items-center space-x-10 justify-center'>
-         <div>
+      <div className='border rounded-full border-slate-300 p-2 ml-20 mr-20 mb-3'>
+      <div className='flex items-center  space-x-10 justify-between ml-8 mr-6 space-x-1 grid grid-cols-5 divide-x'>
+      <div>
           <div className='font-bold'>Where</div>
-          <span className='font-light text-gray-600'>Search Destination</span>
+          <span className='font-light text-gray-600'>Search Destinations</span>
           </div>
-          <div className='border-r border-gray-200'></div>
           <div>
-          <div className='font-bold'>Check in</div>
-          <span className='font-light text-gray-600'>Add dates</span>
+          <div className='font-bold ml-3'>Check in</div>
+          <span className='font-light text-gray-600 ml-3'>Add dates</span>
           </div>
-          <div className='border-r border-gray-200'></div>
           <div>
-          <div className='font-bold'>Check out</div>
-          <span className='font-light text-gray-600'>Add Dates</span>
+          <div className='font-bold ml-3'>Check out</div>
+          <span className='font-light text-gray-600 ml-3'>Add Dates</span>
           </div>
-          <div className='border-r border-gray-200'></div>
           <div>
-          <div className='font-bold'>Who</div>
-          <span className='font-light text-gray-600'>Add Guests</span>
+          <div className='font-bold ml-3'>Who</div>
+          <span className='font-light text-gray-600 ml-3'>Add Guests</span>
           </div>
-
+          <div>
+          <BsSearch className='ml-3' /><div className='font-light text-gray-600 ml-3'> Search </div>
+          </div>
         </div>
       </div>
     </>
