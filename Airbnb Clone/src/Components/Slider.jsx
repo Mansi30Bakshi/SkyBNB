@@ -19,7 +19,7 @@ const HorizontalScroller = () => {
   };
 
   return (
-    <div className="scroller-container bg-gray-400">
+    <div className="scroller-container bg-green-200">
       {/* Previous Button */}
 
       {/* Scrollable Content */}
