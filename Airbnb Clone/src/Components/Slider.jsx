@@ -33,29 +33,30 @@ const HorizontalScroller = () => {
   };
 
   return (
-    <div className="scroller-container bg-black text-white">
+    <div className="scroller-container bg-slate-500 text-white">
       {/* Previous Button */}
 
       {/* Scrollable Content */}
-      <div ref={scrollContainerRef} style={{ display: 'flex', overflowX: 'scroll', whiteSpace: 'nowrap' }}>
-        {/* Repeat this block for each item you want to scroll horizontally */}
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><MdPool className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><GiMountainCave className='h-10 w-10 hover:border-b-2 hover:border-gray-300"' /></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><GiMasterOfArms className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><MdCastle className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><TbUfo className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><FaHouseFloodWater className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><GiElvenCastle className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><IoGolfOutline className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><TbTrees className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><TbPool className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><GiHutsVillage className='h-10 w-10 hover:border-b-2 hover:border-gray-300"' /></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><GiDesert className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><GiFoodTruck className='h-10 w-10 hover:border-b-2 hover:border-gray-300"' /></Link>
-        <Link to="#" style={{ minWidth: '9%', padding: '20px' }}><GiHillFort className='h-10 w-10 hover:border-b-2 hover:border-gray-300"'/></Link>
-
+      <div
+        ref={scrollContainerRef}
+        className="flex overflow-x-auto whitespace-nowrap scrollbar-hide">
+        <Link to="#" className="min-w-[9%] p-5"><MdPool className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><GiMountainCave className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><GiMasterOfArms className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><MdCastle className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><TbUfo className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><FaHouseFloodWater className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><GiElvenCastle className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><IoGolfOutline className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><TbTrees className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><TbPool className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><GiHutsVillage className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><GiDesert className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><GiFoodTruck className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
+        <Link to="#" className="min-w-[9%] p-5"><GiHillFort className='h-10 w-10 hover:border-b-2 hover:border-gray-300' /></Link>
       </div>
     </div>
+       
   );
 };
 
