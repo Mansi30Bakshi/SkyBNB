@@ -14,8 +14,8 @@ import YourHome from './Components/YourHome.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
-      <Route path='' element={<Home/>}></Route>
-      <Route path="/stays" element={<Stays />} />
+      <Route path='' element={<Stays/>}></Route>
+      {/* <Route path="/Stays" element={<Stays />} /> */}
       <Route path="/Experien" element={<Experien/>}/>
       <Route path="/OnlineExp" element={<OnlineExp/>}/>
       <Route path="/YourHome" element={<YourHome/>} />

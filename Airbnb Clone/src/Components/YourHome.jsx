@@ -2,7 +2,11 @@ import React from 'react'
 
 const YourHome = () => {
   return (
-    <div>YourHome</div>
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-grow">
+    <div>ur home</div>
+    </main>
+    </div>
   )
 }
 
